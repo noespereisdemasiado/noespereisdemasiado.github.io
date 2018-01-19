@@ -1,0 +1,20 @@
+@font-face{
+    font-family: "simhei";
+    src: url(../fonts/simhei.ttf);
+}
+
+@font-face{
+    font-family: "linux";
+    src: url(../fonts/linux.ttf);
+}
+
+
+@font-face{
+    font-family: "victoria";
+    src: url(../fonts/victoria.ttf);
+}
+
+@font-face{
+    font-family: "Caligula";
+    src: url(../fonts/Caligula.ttf);
+}

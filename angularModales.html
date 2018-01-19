@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<htlm lang="es">
+<html ng-app="frasesApp">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<title>Modales</title>
+	<link rel="stylesheet" type="text/css" href="css/angularStilos.css">
+	<link rel="stylesheet" type="text/css" href="css/fuentes.css">
+	<link rel="stylesheet" href="css/breadcrumb.css">
+	<script type="text/javascript" src="js/angular.min.js"></script>
+</head>
+<body>
+ <ul class="breadcrumb">
+  <li class="select"><a href="inicio.html">Inicio</a></li>
+  <li class="select"><a href="inicio.html">Palabras Chinas</a></li>
+  <li class="actual">Verbos Modales</li>
+</ul>
+
+<div ng-controller="controladorDatos">
+	    <h1>Verbos Modales</h1>
+
+    <div class="dGeneral">
+    <input type="text" name="" value="" placeholder="introduce tu busqueda" ng-model="buscador">
+	    <div class="dParcial" ng-repeat="unafrase in bloque | filter:buscador | orderBy:'+pinyin'">  
+	    <p class="pChino">{{unafrase.chino}}</p>
+	    <p class="pPinyin">{{unafrase.pinyin}}</p>
+	    <p class="pSpain">{{unafrase.spain}}</p>
+        </div>
+
+    </div>
+    <br>
+<ul class="breadcrumb">
+  <li class="select"><a href="inicio.html">Inicio</a></li>
+  <li class="select"><a href="inicio.html">Palabras Chinas</a></li>
+  <li class="actual">Verbos Modales</li>
+</ul>
+	
+</div>
+ 
+
+ <script type="text/javascript" src="js/modales.js"></script>
+</body>
+</html>

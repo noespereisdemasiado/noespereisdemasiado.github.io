@@ -1,0 +1,31 @@
+ul.breadcrumb {
+    padding: 8px 16px;
+    list-style: none;
+    background-color: #242323;
+    margin: 0px;
+    
+}
+ul.breadcrumb li {
+    display: inline;
+                }
+ul.breadcrumb li+li:before {
+    padding: 5px;
+    color: white;
+    
+    content: "/";
+}
+ul.breadcrumb li a {
+    color: white;
+                    }
+.actual{
+    color: blueviolet;
+    
+}
+
+ul.breadcrumb li a:hover {
+    letter-spacing: 3px;
+    color: yellow;
+                    }
+
+
+

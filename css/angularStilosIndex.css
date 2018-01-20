@@ -66,14 +66,17 @@ p{
     transform: scale(0.95);
 }
 
+/* Tablet vertical y Smartphone horizontal */
 
-@media(max-width:768px){
+@media(max-width:767px){
     form{
         width: 75%;
         margin: 10% 10%;
     }
     
 }
+
+/* Smartphone vertical */
 
 @media(max-width:480px){
     form{

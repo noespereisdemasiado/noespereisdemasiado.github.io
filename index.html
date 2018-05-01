@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<htlm lang="es">
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/angularStilosIndex.css">
+	<title>Login</title>
+    
+<body>
+	
+	
+<form action="" method="">
+    
+    <h2>Formulario de acceso</h2>
+    <p>(mes que muri&oacute; Jes&uacute;s)</p>
+    <input type="text" placeholder="&#10003; usuario" name="usuario" id="usuario">
+    <p>(Equivalente en a&ntilde;os a los siete tiempos y medio)</p>
+    <input type="password" placeholder="&#9733; password" name="clave" id="clave">
+    <p id="ingresar" onclick="validacion()">Ingresar</p>
+    
+</form>
+	
+    
+    <script>
+ function validacion()
+{
+var vUsuario=document.getElementById("usuario").value;
+var vClave=document.getElementById("clave").value;
+if (vUsuario=="nisan" && vClave=="2520")
+  {
+      window.location.href='inicio.html'
+  }
+
+    
+else
+  {
+alert("ERROR: Introduce de nuevo los datos");
+    document.getElementById("usuario").value=""; 
+    document.getElementById("clave").value=""; 
+  }               
+                                                            }
+        
+        </script>
+	
+</body>
+</html>

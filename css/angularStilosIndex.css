@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body{
+    background: #DEDEDE;
+    display: flex;
+    height: 500px;
+}
+
+form{
+    margin: 5% 30%;
+    width: 70%;
+    max-width: 500px;
+    background: #F3F3F3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,0.2); 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #716e6e;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;  
+    text-align: center;
+    box-shadow: 2px 2px 5px #716e6e;
+}
+
+p{
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+#ingresar {
+    background:  -moz-linear-gradient(#ffda63, #ffb940);
+    background:  -webkit-linear-gradient(#ffda63, #ffb940);
+    background:  -o-linear-gradient(#ffda63, #ffb940);
+    border:0px;
+    color: brown;
+    height: 40px;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    padding-top: 5px;
+}
+
+#ingresar:hover {
+    opacity: 1;
+}
+
+#ingresar:active {
+    transform: scale(0.95);
+}
+
+/* Tablet vertical y Smartphone horizontal */
+
+@media(max-width:767px){
+    form{
+        width: 75%;
+        margin: 10% 10%;
+    }
+    
+}
+
+/* Smartphone vertical */
+
+@media(max-width:480px){
+    form{
+        width: 80%;
+        margin: 10% 5%;
+    }
+    
+}
+
+
+
+
+
+
+

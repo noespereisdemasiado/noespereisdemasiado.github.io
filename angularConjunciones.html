@@ -21,7 +21,7 @@
 	    <h1>Conjunciones</h1>
 
     <div class="dGeneral">
-    <input type="text" name="" value="" placeholder="introduce tu busqueda" ng-model="buscador">
+    <input type="text" name="" value="" placeholder="Buscar" ng-model="buscador" autofocus>
 	    <div class="dParcial" ng-repeat="unafrase in bloque | filter:buscador | orderBy:'+notono'">  
 	    <p class="pChino">{{unafrase.chino}}</p>
 	    <p class="pPinyin">{{unafrase.pinyin}}</p>
